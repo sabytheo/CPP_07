@@ -25,10 +25,10 @@ int main(void)
 		std::cout << array[i] << std::endl;
 	}
 
-	const int le2 = 10;
-	std::string array2[le2] = {"a","b","c","d","e","f","g","h","i","j"};
-	::iter(array2,len,upcase);
-	for(int i = 0 ; i < le2 ; i++)
+	const int len2 = 10;
+	std::string array2[len2] = {"a","b","c","d","e","f","g","h","i","j"};
+	::iter(array2,len2,upcase);
+	for(int i = 0 ; i < len2 ; i++)
 	{
 		std::cout << array2[i] << std::endl;
 	}
