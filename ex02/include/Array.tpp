@@ -3,7 +3,7 @@
 template <typename T>
 Array<T>::Array() : _size(0)
 {
-	_data = new T[_size];
+	_data = new T[_size]();
 	// _data = NULL;
 }
 template <typename T>
@@ -28,7 +28,7 @@ Array<T> &Array<T>::operator=(const Array &other)
 	{
 		delete[] this->_data;
 		this->size = other._size;
-		this->_data = new T[this->size];
+		this->_data = new T[this->size]();
 		for (unsigned int i = 0; i < this->_size; i++)
 		{
 			this->_data[i] = other->_data[i]();
