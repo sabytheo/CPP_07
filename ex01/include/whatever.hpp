@@ -2,7 +2,7 @@
 #define WHATEVER_HPP
 
 template <typename T, typename F>
-void iter(T& array, const int length, F func)
+void iter(T& array, const int length, F& func)
 {
 	for (int i = 0 ; i < length ; i++)
 	{
