@@ -31,7 +31,7 @@ Array<T> &Array<T>::operator=(const Array &other)
 		this->_data = new T[this->_size]();
 		for (unsigned int i = 0; i < this->_size; i++)
 		{
-			this->_data[i] = other->_data[i];
+			this->_data[i] = other._data[i];
 		}
 	}
 	return *this;
@@ -46,7 +46,7 @@ T &Array<T>::operator[](unsigned int index)
 }
 
 template <typename T>
-T &Array<T>::operator[](unsigned int index) const
+const T &Array<T>::operator[](unsigned int index) const
 {
 	if (index >= this->_size)
 		throw Array<T>::OutOfBoundsException();
