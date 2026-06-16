@@ -1,6 +1,14 @@
 #include <iostream>
 #include "Array.hpp"
 
+
+void printArray(const Array<int>& arr) {
+    for (unsigned int i = 0; i < arr.size(); i++) {
+        std::cout << arr[i] << std::endl;
+    }
+}
+
+
 int main(void)
 {
 
@@ -33,6 +41,7 @@ int main(void)
 		std::cout << "third size: " << third.size() << std::endl;
 		std::cout << "Third[2]: " << third[2] << std::endl;
 		std::cout << "Third[3]: " << third[3] << std::endl;
+		printArray(third);
 		delete a;
 	}
 	catch (const std::exception &e)

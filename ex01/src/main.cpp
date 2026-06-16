@@ -1,5 +1,5 @@
 #include <iostream>
-#include "whatever.hpp"
+#include "iter.hpp"
 
 int incr(int& nb)
 {
@@ -17,10 +17,10 @@ void upcase(std::string& str)
 
 int main(void)
 {
-	const int len = 10;
+	const unsigned int len = 10;
 	int array[len] = {0,1,2,3,4,5,6,7,8,9};
 	::iter(array,len,incr);
-	for(int i = 0 ; i < len ; i++)
+	for(unsigned int i = 0 ; i < len ; i++)
 	{
 		std::cout << array[i] << std::endl;
 	}
