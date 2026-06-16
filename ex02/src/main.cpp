@@ -26,11 +26,11 @@ int main(void)
 	try
 	{
 		int *a = new int();
+		std::cout << "Value of a: " << *a << std::endl;
 		unsigned int len = 5;
 		Array<int> second(len);
 
 		Array<int> fourth;
-		std::cout << "Value of a: " << *a << std::endl;
 		std::cout << "Second[2] before: " << second[2] << std::endl;
 		second[2] = 48;
 		second[3] = 56;
